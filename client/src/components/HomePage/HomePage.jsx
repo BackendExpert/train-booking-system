@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className="bg-white lg:mx-24 mx-8 py-16 px-12 mt-[-100px] rounded shadow-2xl">
             <form>
                 <div className="lg:flex">
-                    <div className="">
+                    <div className="w-full">
                         <label htmlFor="from" >From</label><br />
                         <select required className="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a Start Location</option>
@@ -25,15 +25,22 @@ const HomePage = () => {
                     <div className="mx-12 my-4">
                         <MyIcons name='arrow-forward' size='large'></MyIcons>
                     </div>
-                    <div className="">
+                    <div className="w-full">
                         <label htmlFor="from" >To</label><br />
                         <select required className="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Choose a </option>
+                            <option selected>Choose a Destination</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
                             <option value="FR">France</option>
                             <option value="DE">Germany</option>
                         </select>
+                    </div>
+                    <div className="mx-12 my-4">
+                        <MyIcons name='calendar' size='large'></MyIcons>
+                    </div>
+                    <div className="w-full">
+                        <label htmlFor="from" >To</label><br />
+                        <input type="date" name="" id="" />
                     </div>
                 </div>
             </form>
