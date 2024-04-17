@@ -23,7 +23,7 @@ const HomePage = () => {
                         </select>
                     </div>
                     <div className="">
-
+                        <MyIcons name='arrow-forward' size='large'></MyIcons>
                     </div>
                 </div>
             </form>
