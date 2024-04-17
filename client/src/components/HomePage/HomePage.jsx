@@ -1,5 +1,5 @@
 import React from 'react'
-import Icons from '@reacticons/ionicons'
+import MyIcons from '@reacticons/ionicons'
 
 const HomePage = () => {
   return (
