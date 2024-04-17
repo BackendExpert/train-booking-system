@@ -1,4 +1,5 @@
 import React from 'react'
+import Icons from '@reacticons/ionicons'
 
 const HomePage = () => {
   return (
@@ -22,7 +23,7 @@ const HomePage = () => {
                         </select>
                     </div>
                     <div className="">
-                        
+
                     </div>
                 </div>
             </form>
