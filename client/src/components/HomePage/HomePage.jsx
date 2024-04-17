@@ -59,8 +59,8 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quis cupiditate veniam eligendi ut magnam expedita, similique consectetur, amet ratione sequi eos voluptatibus repellat cumque. Maiores, deserunt cumque. Laboriosam?
             </p>
         </div>
-        <div className="lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713262.jpg)] brightness-50 bg-center bg-cover h-auto w-full">
-            <h1 className=""></h1>
+        <div className="bg-gray-200 px-24 py-20">
+            hi all
         </div>
 
     </div>
