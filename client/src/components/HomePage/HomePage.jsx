@@ -39,9 +39,10 @@ const HomePage = () => {
                         <MyIcons name='calendar' size='large'></MyIcons>
                     </div>
                     <div className="w-full">
-                        <label htmlFor="from" >To</label><br />
-                        <input type="date" name="" id="" className='my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'/>
+                        <label htmlFor="from" >Travel Date</label><br />
+                        <input type="date" name="" id="" required className='my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'/>
                     </div>
+                    <div className="border-l-4 border-gray-300 mx-9"></div>
                 </div>
             </form>
         </div>
