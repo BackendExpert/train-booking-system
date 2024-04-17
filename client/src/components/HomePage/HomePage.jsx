@@ -23,7 +23,8 @@ const HomePage = () => {
                         </select>
                     </div>
                     <div className="mx-12 my-4">
-                        <MyIcons name='arrow-forward' size='large'></MyIcons>
+                        <span className='lg:visible invisible'><MyIcons name='arrow-forward' size='large'></MyIcons></span>
+                        <span className='lg:invisible visible'><MyIcons name='arrow-down' size='large'></MyIcons></span>
                     </div>
                     <div className="w-full">
                         <label htmlFor="from" >To</label><br />
@@ -51,6 +52,15 @@ const HomePage = () => {
                     </div>
                 </div>
             </form>
+        </div>
+        <div className="my-12 text-center">
+            <h1 className="text-4xl font-semibold text-gray-500">The Railways</h1>
+            <p className="lg:mx-36 mx-8 my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quis cupiditate veniam eligendi ut magnam expedita, similique consectetur, amet ratione sequi eos voluptatibus repellat cumque. Maiores, deserunt cumque. Laboriosam?
+            </p>
+        </div>
+        <div className="lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover h-auto w-full">
+            <h1 className="text-4xl font-semibold text-gray-500">our services</h1>
         </div>
     </div>
   )
