@@ -59,8 +59,8 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quis cupiditate veniam eligendi ut magnam expedita, similique consectetur, amet ratione sequi eos voluptatibus repellat cumque. Maiores, deserunt cumque. Laboriosam?
             </p>
         </div>
-        <div className="lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] brightness-50 bg-center bg-cover h-auto w-full">
-            <h1 className="text-4xl font-semibold text-gray-500">our services</h1>
+        <div className="lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp5682288.jpg)] brightness-50 bg-center bg-cover h-auto w-full">
+            <h1 className="text-4xl font-semibold text-white">our services</h1>
         </div>
 
     </div>
