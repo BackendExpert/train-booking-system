@@ -9,7 +9,7 @@ const HomePage = () => {
                 <h1 className="text-3xl font-semibold">Sri Lankan Railways</h1>
             </div>
         </div>
-        <div className="bg-white lg:mx-24 mx-8 py-16 px-12 mt-[-100px] rounded shadow-2xl">
+        <div className="bg-white lg:mx-24 mx-8 py-16 px-12 lg:mt-[-100px] mt-[-280px] rounded shadow-2xl lg:mb-40 mb-20">
             <form>
                 <div className="lg:flex">
                     <div className="w-full">
@@ -43,6 +43,12 @@ const HomePage = () => {
                         <input type="date" name="" id="" required className='my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'/>
                     </div>
                     <div className="border-l-4 border-gray-300 mx-9"></div>
+                    <div className="">
+                        <button type="submit" className='flex bg-blue-500 py-4 px-8 my-2 text-white rounded duration-500 hover:bg-blue-700 hover:shadow-2xl'> 
+                            <MyIcons name='search' size='large'></MyIcons>
+                            <p className="mt-1 pl-2">SearchTrains</p>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
