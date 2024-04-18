@@ -188,11 +188,14 @@ const HomePage = () => {
                 </div>
                 <div className="lg:px-4 px-0 w-full">
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Contact</h1>
-
+                    <p className="my-5">jehan@123.com</p>   
+                    <p className="my-5">+94b 711758851</p>  
+                    <p className="my-5">88, ABC Street, XYZ</p>  
                 </div>
-
-
             </div>
+            <span className="text-center">
+                &copy; The Train Booking System - 2024 || Developed and Designed by : Jehankandy
+            </span>
         </footer>
     </div>
   )
