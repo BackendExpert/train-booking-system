@@ -59,10 +59,10 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quis cupiditate veniam eligendi ut magnam expedita, similique consectetur, amet ratione sequi eos voluptatibus repellat cumque. Maiores, deserunt cumque. Laboriosam?
             </p>
         </div>
-        <div className="bg-gray-200 px-24 py-20">
-            <h1 className="text-center text-4xl font-semibold text-gray-500">Our Services</h1>
-            <div className="lg:flex">
-                <div className="bg-white rounded py-10 px-8 shadow-md">
+        <div className="bg-gray-200 lg:px-24 px-10 py-20 ">
+            <h1 className="text-center text-4xl font-semibold text-gray-500 mb-4">Our Services</h1>
+            <div className="lg:flex my-4">
+                <div className="bg-white rounded py-10 px-8 shadow-md mx-2 lg:my-0 my-2">
                     <div className="flex">
                         <span className='my-4 mr-2'><MyIcons name='train' size='large'></MyIcons></span>
                         <div className="">
@@ -71,23 +71,34 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded py-10 px-8 shadow-md">
+                <div className="bg-white rounded py-10 px-8 shadow-md mx-2 lg:my-0 my-2">
                     <div className="flex">
-                        <span className='my-4 mr-2'><MyIcons name='train' size='large'></MyIcons></span>
+                        <span className='my-4 mr-2'><MyIcons name='person' size='large'></MyIcons></span>
                         <div className="">
-                            <h1 className='text-xl font-semibold'>Online Booking</h1>
-                            <p className="py-2">Easy to Booking Train ticket via Online</p> 
+                            <h1 className='text-xl font-semibold'>Passenger Transportation</h1>
+                            <p className="py-2">Fastest, Safety</p> 
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded py-10 px-8 shadow-md">
+                <div className="bg-white rounded py-10 px-8 shadow-md mx-2 lg:my-0 my-2">
                     <div className="flex">
-                        <span className='my-4 mr-2'><MyIcons name='train' size='large'></MyIcons></span>
+                        <span className='my-4 mr-2'><MyIcons name='cube' size='large'></MyIcons></span>
                         <div className="">
-                            <h1 className='text-xl font-semibold'>Online Booking</h1>
-                            <p className="py-2">Easy to Booking Train ticket via Online</p> 
+                            <h1 className='text-xl font-semibold'>Cargo  Transportation</h1>
+                            <p className="py-2">Transport Cargo to anywhere in Country</p> 
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div className="bg-white lg:mx-20 my-24">
+            <h1 className="text-center text-4xl font-semibold text-gray-500 my-8">Latest Destination</h1>
+            <div className="flex">
+                <div className="bg-gray-200 py-8 px-12 mx-8">
+                    <div className="bg-[url()] bg-cover w-auto h-auto">
+                        <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" />                            
+                    </div>
+                    hi all
                 </div>
             </div>
         </div>
