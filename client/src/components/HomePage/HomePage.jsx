@@ -1,7 +1,7 @@
 import React from 'react'
 import MyIcons from '@reacticons/ionicons'
 
-footerData = [
+const footerData = [
     // for our services
     {id: 1, name: "Online Ticket Booking", link: "#"},
     {id: 2, name: "Passenger Transportation", link: "#"},
@@ -165,22 +165,28 @@ const HomePage = () => {
         </div>
         <footer className='bg-white px-16 py-12'>
             <div className="lg:flex">
-                <div className="lg:px-4 px-0">
+                <div className="lg:px-4 px-0 w-full">
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
                     <p className="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
                 </div>
-                <div className="lg:px-4 px-0">
-                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
-                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                <div className="lg:px-4 px-0 w-full">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Our Services</h1>
+                    <div className="">
+                        <p className="my-5">Online Ticket Booking</p>   
+                        <p className="my-5">Online Ticket Booking</p>  
+                        <p className="my-5">Online Ticket Booking</p>  
+                    </div>
+                    
                 </div>
-                <div className="lg:px-4 px-0">
-                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
-                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                <div className="lg:px-4 px-0 w-full">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">More About</h1>
+                    
                 </div>
-                <div className="lg:px-4 px-0">
-                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
-                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                <div className="lg:px-4 px-0 w-full">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Contact</h1>
+                    
                 </div>
+
 
             </div>
         </footer>
