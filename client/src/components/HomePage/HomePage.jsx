@@ -61,6 +61,11 @@ const HomePage = () => {
         </div>
         <div className="bg-gray-200 px-24 py-20">
             <h1 className="text-center text-4xl font-semibold text-gray-500">Our Services</h1>
+            <div className="lg:flex">
+                <div className="">
+                    <img src="" alt="" />
+                </div>
+            </div>
         </div>
 
     </div>
