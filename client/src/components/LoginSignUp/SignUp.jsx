@@ -10,7 +10,8 @@ const SignUp = () => {
         <div className='my-24 mx-20'>
             <div className="flex">
                 <div className="bg-blue-500 rounded w-full h-auto py-12 px-10">
-                    asdas
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad earum facilis saepe? Assumenda nulla modi, cum doloremque cupiditate omnis hic perferendis dolorem dolores sapiente tempore unde nam praesentium consectetur est!
+                    Reprehenderit aut et accusantium. Veniam ipsum eaque asperiores cum, voluptatum recusandae! Dolor minus deleniti eos mollitia tempora, molestias deserunt tempore esse quasi ratione repellat maxime dolores eum, harum itaque. Sed.
 
                 </div>
             </div>
