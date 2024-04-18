@@ -1,21 +1,15 @@
-import React from 'react'
+import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
+import { Link } from "react-router-dom";
 
 const footerData = [
     // for our services
-    {id: 1, name: "Online Ticket Booking", link: "#"},
-    {id: 2, name: "Passenger Transportation", link: "#"},
-    {id: 3, name: "Cargo Transportation", link: "#"},
-    // links
-    {id: 4, name: "History", link: "#"},
-    {id: 5, name: "Gallery", link: "#"},
-    {id: 6, name: "Events", link: "#"},
-    {id: 7, name: "Friends", link: "#"},
-    {id: 8, name: "Link", link: "#"},
-    // contact as
-    {id: 9, name: "jehan@123.com", link: "#", icon: "icon"},
-    {id: 10, name: "+94 711758851", link: "#", icon: "icon"},
-    {id: 11, name: "88, ABC Street, XYZ", link: "#", icon: "icon"},
+    {name: "History", link: "#"},
+    {name: "Gallery", link: "#"},
+    {name: "Events", link: "#"},
+    {name: "Friends", link: "#"},
+    {name: "Link", link: "#"},
+
 ]
 
 const HomePage = () => {
@@ -173,18 +167,30 @@ const HomePage = () => {
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Our Services</h1>
                     <div className="">
                         <p className="my-5">Online Ticket Booking</p>   
-                        <p className="my-5">Online Ticket Booking</p>  
-                        <p className="my-5">Online Ticket Booking</p>  
+                        <p className="my-5">Passenger Transportation</p>  
+                        <p className="my-5">Cargo Transportation</p>  
                     </div>
                     
                 </div>
                 <div className="lg:px-4 px-0 w-full">
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">More About</h1>
-                    
+                    <div className="">
+                        <p className="my-5">History</p>   
+                        <p className="my-5">Passenger Transportation</p>  
+                        <p className="my-5">Cargo Transportation</p>  
+                    </div>
                 </div>
                 <div className="lg:px-4 px-0 w-full">
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Contact</h1>
-                    
+                    {
+                        footerData.map((data) => {
+                            return (
+                                <Link>
+                                
+                                </Link>
+                            )
+                        })
+                    }
                 </div>
 
 
