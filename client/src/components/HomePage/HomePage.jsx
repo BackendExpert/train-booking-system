@@ -114,6 +114,12 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
+        <div className="bg-gray-200 lg:px-24 px-10 py-20 ">
+            <h1 className="text-center text-4xl font-semibold text-gray-500 my-8">User Comments</h1>
+            <div className="lg:flex">
+                
+            </div>
+        </div>
 
     </div>
   )
