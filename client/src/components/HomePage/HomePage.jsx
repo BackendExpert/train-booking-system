@@ -8,8 +8,8 @@ footerData = [
     {id: 3, name: "Cargo Transportation", link: "#"},
     // links
     {id: 4, name: "History", link: "#"},
-    {id: 5, name: "", link: "#"},
-    {id: 6, name: "", link: "#"},
+    {id: 5, name: "Gallery", link: "#"},
+    {id: 6, name: "Events", link: "#"},
     {id: 7, name: "", link: "#"},
     {id: 8, name: "", link: "#"},
     // contact as
