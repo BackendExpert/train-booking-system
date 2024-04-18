@@ -117,9 +117,10 @@ const HomePage = () => {
         <div className="bg-gray-200 lg:px-24 px-10 py-20 ">
             <h1 className="text-center text-4xl font-semibold text-gray-500 my-8">User Comments</h1>
             <div className="lg:flex">
-                <div className="bg-white py-4 px-8">
-                    
+                <div className="bg-white py-4 px-8 ml-2 w-full">
+                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-52 w-auto rounded ml-[-60px] mt-[-20px]' />
                 </div>
+
             </div>
         </div>
 
