@@ -1,9 +1,44 @@
-import React from 'react'
+import React, {useState } from 'react'
+import MyIcons from '@reacticons/ionicons'
+import { Link } from "react-router-dom";
 
-const SignIn = () => {
+// https://wallpapercave.com/wp/wp5682561.jpg
+
+const SignUp = () => {
   return (
-    <div>SignIn</div>
+    <div className='bg-gray-200 py-24'>
+        <div className='mx-20'>
+            <div className="lg:flex bg-white shadow-md rounded w-full h-auto">
+                <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover h-auto w-full'>
+                    <div className="text-white font-semibold text-3xl text-center my-16">Welcome to Railways</div>                    
+                </div>
+                <div className="mx-5 py-12 px-10 w-full">
+                    <form className=''>
+                        <div className="my-5">
+                            <label htmlFor="">Username : </label>
+                            <input type="text" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Username'/>
+                        </div>
+                        <div className="my-5">
+                            <label htmlFor="">Email : </label>
+                            <input type="email" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Email'/>
+                        </div>
+                        <div className="my-5">
+                            <label htmlFor="">Password : </label>
+                            <input type="password" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Password'/>
+                        </div>
+                        <div className="">
+                            <button type='submit' className='w-full bg-blue-500 rounded py-4 px-8 text-white duration-500 hover:bg-blue-600 hover:shadow-md'>SignUp</button>
+                        </div>
+                    </form>
+                    <p>Already have an Account ? <Link to={'/SignIn'}><span className='text-blue-500'>SignIn</span></Link></p>
+                </div>
+            </div>
+            <div className="my-1 text-center">
+                &copy; Developed and Design by : JehanKandy
+            </div>
+        </div>
+    </div>
   )
 }
 
-export default SignIn
+export default SignUp
