@@ -175,22 +175,20 @@ const HomePage = () => {
                 <div className="lg:px-4 px-0 w-full">
                     <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">More About</h1>
                     <div className="">
-                        <p className="my-5">History</p>   
-                        <p className="my-5">Passenger Transportation</p>  
-                        <p className="my-5">Cargo Transportation</p>  
-                    </div>
-                </div>
-                <div className="lg:px-4 px-0 w-full">
-                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Contact</h1>
                     {
                         footerData.map((data) => {
                             return (
-                                <Link>
-                                
+                                <Link to={data.link}>
+                                    <p className="my-5">{data.name}</p>
                                 </Link>
                             )
                         })
                     }
+                    </div>
+                </div>
+                <div className="lg:px-4 px-0 w-full">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">Contact</h1>
+
                 </div>
 
 
