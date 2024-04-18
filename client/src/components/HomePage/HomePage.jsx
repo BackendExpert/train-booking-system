@@ -10,8 +10,8 @@ footerData = [
     {id: 4, name: "History", link: "#"},
     {id: 5, name: "Gallery", link: "#"},
     {id: 6, name: "Events", link: "#"},
-    {id: 7, name: "", link: "#"},
-    {id: 8, name: "", link: "#"},
+    {id: 7, name: "Friends", link: "#"},
+    {id: 8, name: "Link", link: "#"},
     // contact as
     {id: 9, name: "jehan@123.com", link: "#", icon: "icon"},
     {id: 10, name: "+94 711758851", link: "#", icon: "icon"},
