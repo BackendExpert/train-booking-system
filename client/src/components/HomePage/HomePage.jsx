@@ -18,8 +18,10 @@ const HomePage = () => {
         <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover lg:h-[80vh] h-screen w-full'>
             <div className="text-white text-center my-12">
                 <h1 className="text-3xl font-semibold">Sri Lankan Railways</h1>
-                <div className="my-16">
-                    Be a Member
+                <div className="my-16 text-center">
+                    <Link>
+                        <button className='bg-white py-4 px-8 rounded text-gray-500 duration-500 hover:ml-6'>Be a Member</button>
+                    </Link>
                 </div>
             </div>
         </div>
