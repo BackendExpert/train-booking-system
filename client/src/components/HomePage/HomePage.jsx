@@ -26,13 +26,10 @@ const HomePage = () => {
                         <span className='lg:visible invisible'><MyIcons name='arrow-forward' size='large'></MyIcons></span>
                         <span className='lg:invisible visible'><MyIcons name='arrow-down' size='large'></MyIcons></span>
                     </div>
-<<<<<<< HEAD
                     <div className="">
                         <label htmlFor="from" >Destination</label><br />
-=======
                     <div className="w-full">
                         <label htmlFor="from" >To</label><br />
->>>>>>> 58ccdce6e9d6437400b575e58f43fb94fd138560
                         <select required className="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a Destination</option>
                             <option value="US">United States</option>
@@ -55,6 +52,7 @@ const HomePage = () => {
                             <p className="mt-1 pl-2">SearchTrains</p>
                         </button>
                     </div>
+                </div>
                 </div>
             </form>
         </div>
