@@ -91,14 +91,26 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <div className="bg-white lg:mx-20 my-24">
+        <div className="bg-white lg:mx-20 mx-6 my-24">
             <h1 className="text-center text-4xl font-semibold text-gray-500 my-8">Latest Destination</h1>
-            <div className="flex">
-                <div className="bg-gray-200 py-8 px-12 mx-8">
-                    <div className="bg-[url()] bg-cover w-auto h-auto">
-                        <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" />                            
+            <div className="lg:flex my-28">
+                <div className="bg-gray-200 py-8 px-4 mx-4 lg:my-0 my-24 rounded-lg shadow-xl">
+                    <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" className='rounded-xl mt-[-95px] w-full shadow-xl'/>                            
+                    <div className="my-8 mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi animi quo consequuntur vero possimus, rerum, accusantium asperiores vitae aperiam veritatis deleniti iste id delectus quam eligendi a veniam qui similique?
                     </div>
-                    hi all
+                </div>
+                <div className="bg-gray-200 py-8 px-4 mx-4 lg:my-0 my-24 rounded-lg shadow-xl">
+                    <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" className='rounded-xl mt-[-95px] w-full shadow-xl'/>                            
+                    <div className="my-8 mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi animi quo consequuntur vero possimus, rerum, accusantium asperiores vitae aperiam veritatis deleniti iste id delectus quam eligendi a veniam qui similique?
+                    </div>
+                </div>
+                <div className="bg-gray-200 py-8 px-4 mx-4 lg:my-0 my-24 rounded-lg shadow-xl">
+                    <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" className='rounded-xl mt-[-95px] w-full shadow-xl'/>                            
+                    <div className="my-8 mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi animi quo consequuntur vero possimus, rerum, accusantium asperiores vitae aperiam veritatis deleniti iste id delectus quam eligendi a veniam qui similique?
+                    </div>
                 </div>
             </div>
         </div>
