@@ -62,8 +62,15 @@ const HomePage = () => {
         <div className="bg-gray-200 px-24 py-20">
             <h1 className="text-center text-4xl font-semibold text-gray-500">Our Services</h1>
             <div className="lg:flex">
-                <div className="">
-                    <img src="" alt="" />
+                <div className="bg-white rounded py-4 px-8">
+                    <div className="flex">
+                        <span className='my-4 mr-2'><MyIcons name='train' size='large'></MyIcons></span>
+                        <div className="">
+                            <h1 className='text-xl font-semibold'>Online Booking</h1>
+                            <p className="py-2">Easy to Booking Train ticket via Online</p> 
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
