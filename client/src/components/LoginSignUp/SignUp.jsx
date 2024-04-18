@@ -10,7 +10,7 @@ const SignUp = () => {
         <div className='mx-20'>
             <div className="lg:flex bg-white shadow-md rounded  w-full h-auto py-12 px-10">
                 <div className="mx-5">
-                    <img src="" alt="" />
+                    <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" />
                 </div>
                 <div className="mx-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad earum facilis saepe? Assumenda nulla modi, cum doloremque cupiditate omnis hic perferendis dolorem dolores sapiente tempore unde nam praesentium consectetur est!
