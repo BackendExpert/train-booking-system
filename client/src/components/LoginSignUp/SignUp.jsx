@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div>SignUp</div>
+    <div>
+        <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover lg:h-[80vh] h-screen w-full'>
+            Hi all
+        </div>
+    </div>
   )
 }
 
