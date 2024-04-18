@@ -146,7 +146,27 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
+        <footer className='bg-white px-16 py-12'>
+            <div className="lg:flex">
+                <div className="lg:px-4 px-0">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
+                    <p className="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                </div>
+                <div className="lg:px-4 px-0">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
+                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                </div>
+                <div className="lg:px-4 px-0">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
+                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                </div>
+                <div className="lg:px-4 px-0">
+                    <h1 className="text-xl font-semibold font-semibold text-gray-500 my-4 ">About us</h1>
+                    <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste suscipit nesciunt, dolore inventore provident fuga incidunt quibusdam nobis tenetur culpa at! Facilis, rerum illo? Pariatur aperiam error corporis fuga.</p>
+                </div>
 
+            </div>
+        </footer>
     </div>
   )
 }
