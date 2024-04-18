@@ -193,9 +193,10 @@ const HomePage = () => {
                     <p className="my-5">88, ABC Street, XYZ</p>  
                 </div>
             </div>
-            <span className="text-center">
+            <hr className='border-t-2 border-gray-200'/>
+            <div className="text-center my-2">
                 &copy; The Train Booking System - 2024 || Developed and Designed by : Jehankandy
-            </span>
+            </div>
         </footer>
     </div>
   )
