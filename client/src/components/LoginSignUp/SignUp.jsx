@@ -12,7 +12,7 @@ const SignUp = () => {
                 <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover h-auto w-full'>
                     <div className="text-white font-semibold text-3xl text-center my-16">Welcome to Railways</div>                    
                 </div>
-                <div className="mx-5 py-12 px-10 w-full">
+                <div className="py-12 px-10 w-full">
                     <form className=''>
                         <div className="my-5">
                             <label htmlFor="">Username : </label>
