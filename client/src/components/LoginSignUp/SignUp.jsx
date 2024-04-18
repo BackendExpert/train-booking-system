@@ -11,6 +11,7 @@ const SignUp = () => {
             <div className="lg:flex bg-white shadow-md rounded w-full h-auto">
                 <div className="">
                     <img src="https://wallpapercave.com/wp/wp12713228.jpg" alt="" className='rounded h-full' />
+                    asdasd
                 </div>
                 <div className="mx-5 py-12 px-10 w-full">
                     <form className=''>
