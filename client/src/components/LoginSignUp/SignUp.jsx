@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <div className='bg-gray-200 py-24'>
-        <div className='mx-20'>
+        <div className='lg:mx-20 mx-8'>
             <div className="lg:flex bg-white shadow-md rounded w-full h-auto">
                 <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover h-auto w-full'>
                     <div className="text-white font-semibold text-3xl text-center my-16">Welcome to Railways</div>                    
