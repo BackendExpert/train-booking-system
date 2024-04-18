@@ -116,19 +116,34 @@ const HomePage = () => {
         </div>
         <div className="bg-gray-200 lg:px-24 px-10 py-20 ">
             <h1 className="text-center text-4xl font-semibold text-gray-500 my-8">User Comments</h1>
-            <div className="lg:flex my-20">
-                <div className="bg-white py-4 px-8 mx-8 w-full">
-                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px] duration-500hover:mt-[-50px]' />
+            <div className="lg:flex my-10">
+                <div className="bg-white py-4 px-8 w-full shadow-md rounded-xl lg:my-0 my-8">
+                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px] shadow-xl' />
+                    <div className="my-4">
+                        <h1 className="text-2xl">John Erick</h1>
+                        <h2 className="text-xd">Software Developer</h2>
+                        <hr />
+                        <p className="text-md my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quo molestiae. Tenetur accusantium ad sed nisi et aperiam, voluptatem est sunt, culpa veritatis in nam obcaecati earum distinctio error repudiandae!</p>
+                    </div>
                 </div>
-                <div className="bg-white py-4 px-8 mx-8 w-full">
-                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px]' />
+                <div className="bg-white py-4 px-8 w-full shadow-md rounded-xl lg:my-0 my-8">
+                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px] shadow-xl' />
+                    <div className="my-4">
+                        <h1 className="text-2xl">John Erick</h1>
+                        <h2 className="text-xd">Software Developer</h2>
+                        <hr />
+                        <p className="text-md my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quo molestiae. Tenetur accusantium ad sed nisi et aperiam, voluptatem est sunt, culpa veritatis in nam obcaecati earum distinctio error repudiandae!</p>
+                    </div>
                 </div>
-                <div className="bg-white py-4 px-8 mx-8 w-full">
-                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px]' />
+                <div className="bg-white py-4 px-8 w-full shadow-md rounded-xl lg:my-0 my-8">
+                    <img src="https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?t=st=1713421890~exp=1713425490~hmac=9c4dda8e57f2e71baa0ffbb050a93fd59dedcb0ac249afb131174cbfafe3fbd6&w=740" alt="" className='h-40 w-auto rounded ml-2 mt-[-30px] shadow-xl' />
+                    <div className="my-4">
+                        <h1 className="text-2xl">John Erick</h1>
+                        <h2 className="text-xd">Software Developer</h2>
+                        <hr />
+                        <p className="text-md my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quo molestiae. Tenetur accusantium ad sed nisi et aperiam, voluptatem est sunt, culpa veritatis in nam obcaecati earum distinctio error repudiandae!</p>
+                    </div>
                 </div>
-
-
-
             </div>
         </div>
 
