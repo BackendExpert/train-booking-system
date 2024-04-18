@@ -7,8 +7,13 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <div>
-        <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp5682561.jpg)] bg-center bg-cover h-screen w-full'>
-            Hi all
+        <div className='my-24 mx-20'>
+            <div className="flex">
+                <div className="bg-blue-500 rounded w-full h-auto py-12 px-10">
+                    asdas
+
+                </div>
+            </div>
         </div>
     </div>
   )
