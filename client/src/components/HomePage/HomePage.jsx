@@ -9,10 +9,10 @@ const HomePage = () => {
                 <h1 className="text-3xl font-semibold">Sri Lankan Railways</h1>
             </div>
         </div>
-        <div className="bg-white lg:mx-24 mx-8 py-16 px-12 mt-[-100px] rounded shadow-2xl">
+        <div className="bg-white lg:mx-24 mx-8 py-16 px-12 lg:mt-[-100px] mt-[-280px] rounded shadow-2xl lg:mb-40 mb-20">
             <form>
                 <div className="lg:flex">
-                    <div className="">
+                    <div className="w-full">
                         <label htmlFor="from" >From</label><br />
                         <select required className="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a Start Location</option>
@@ -23,10 +23,16 @@ const HomePage = () => {
                         </select>
                     </div>
                     <div className="mx-12 my-4">
-                        <MyIcons name='arrow-forward' size='large'></MyIcons>
+                        <span className='lg:visible invisible'><MyIcons name='arrow-forward' size='large'></MyIcons></span>
+                        <span className='lg:invisible visible'><MyIcons name='arrow-down' size='large'></MyIcons></span>
                     </div>
+<<<<<<< HEAD
                     <div className="">
                         <label htmlFor="from" >Destination</label><br />
+=======
+                    <div className="w-full">
+                        <label htmlFor="from" >To</label><br />
+>>>>>>> 58ccdce6e9d6437400b575e58f43fb94fd138560
                         <select required className="my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a Destination</option>
                             <option value="US">United States</option>
@@ -35,9 +41,33 @@ const HomePage = () => {
                             <option value="DE">Germany</option>
                         </select>
                     </div>
+                    <div className="mx-12 my-4">
+                        <MyIcons name='calendar' size='large'></MyIcons>
+                    </div>
+                    <div className="w-full">
+                        <label htmlFor="from" >Travel Date</label><br />
+                        <input type="date" name="" id="" required className='my-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'/>
+                    </div>
+                    <div className="border-l-4 border-gray-300 mx-9"></div>
+                    <div className="">
+                        <button type="submit" className='flex bg-blue-500 py-4 px-8 my-2 text-white rounded duration-500 hover:bg-blue-700 hover:shadow-2xl'> 
+                            <MyIcons name='search' size='large'></MyIcons>
+                            <p className="mt-1 pl-2">SearchTrains</p>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
+        <div className="my-12 text-center">
+            <h1 className="text-4xl font-semibold text-gray-500">The Railways</h1>
+            <p className="lg:mx-36 mx-8 my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem quis cupiditate veniam eligendi ut magnam expedita, similique consectetur, amet ratione sequi eos voluptatibus repellat cumque. Maiores, deserunt cumque. Laboriosam?
+            </p>
+        </div>
+        <div className="bg-gray-200 px-24 py-20">
+            hi all
+        </div>
+
     </div>
   )
 }
