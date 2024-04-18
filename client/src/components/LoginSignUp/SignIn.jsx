@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <div className='bg-gray-200 py-24'>
-        <div className='mx-20'>
+        <div className='lg:mx-20 mx-8'>
             <div className="lg:flex bg-white shadow-md rounded w-full h-auto">
-            <div className="mx-5 py-12 px-10 w-full">
+            <div className="lg:mx-5 mx-0 py-12 px-10 w-full">
                     <form className=''>
                         <div className="my-5">
                             <label htmlFor="">Email : </label>
