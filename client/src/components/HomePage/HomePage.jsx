@@ -1,6 +1,25 @@
 import React from 'react'
 import MyIcons from '@reacticons/ionicons'
 
+footerData = [
+    // for our services
+    {id: 1, name: "Online Ticket Booking", link: "#"},
+    {id: 2, name: "Passenger Transportation", link: "#"},
+    {id: 3, name: "Cargo Transportation", link: "#"},
+    // links
+    {id: 4, name: "History", link: "#"},
+    {id: 5, name: "", link: "#"},
+    {id: 6, name: "", link: "#"},
+    {id: 7, name: "", link: "#"},
+    {id: 8, name: "", link: "#"},
+    // contact as
+    {id: 9, name: "", link: "#"},
+    {id: 10, name: "", link: "#"},
+    {id: 11, name: "", link: "#"},
+    {id: 12, name: "", link: "#"},
+    
+]
+
 const HomePage = () => {
   return (
     <div className="">
