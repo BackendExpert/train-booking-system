@@ -19,7 +19,7 @@ const HomePage = () => {
             <div className="text-white text-center my-12">
                 <h1 className="text-3xl font-semibold">Sri Lankan Railways</h1>
                 <div className="my-16 text-center">
-                    <Link>
+                    <Link to={'/SignUp'}>
                         <button className='bg-white py-4 px-8 rounded text-gray-500 duration-500 hover:ml-6'>Be a Member</button>
                     </Link>
                 </div>
