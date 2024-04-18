@@ -13,11 +13,9 @@ footerData = [
     {id: 7, name: "", link: "#"},
     {id: 8, name: "", link: "#"},
     // contact as
-    {id: 9, name: "", link: "#"},
-    {id: 10, name: "", link: "#"},
-    {id: 11, name: "", link: "#"},
-    {id: 12, name: "", link: "#"},
-    
+    {id: 9, name: "jehan@123.com", link: "#", icon: "icon"},
+    {id: 10, name: "+94 711758851", link: "#", icon: "icon"},
+    {id: 11, name: "88, ABC Street, XYZ", link: "#", icon: "icon"},
 ]
 
 const HomePage = () => {
