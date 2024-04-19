@@ -51,14 +51,14 @@ const Footer = () => {
                 <h1 className='mt-8 font-semibold'></h1>
                 <div className="flex">
                     <form>
-                        <input type="text" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Email Address'/>
-                        <button type="submit" className='bg-blue-500 text-white shadow-md rounded '>Subscribe for latest Update</button>
+                        <input type="email" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Email Address'/>
+                        <button type="submit" className='bg-blue-500 text-white shadow-md rounded py-2 px-4 w-full text-md text-center duration-500 hover:bg-blue-600'>Subscribe for latest Update</button>
                     </form>
                 </div> 
             </div>
         </div>
 
-        <hr className='border-t-2 border-gray-200'/>
+        <hr className='border-t-2 border-gray-200 mt-8'/>
         <div className="text-center my-2">
             &copy; The Train Booking System - 2024 || Developed and Designed by : Jehankandy
         </div>
