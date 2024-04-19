@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import axios from 'axios'
-
 import { ToastContainer, toast } from 'material-react-toastify';
-import 'material-react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
     const footerData = [
@@ -19,10 +17,23 @@ const Footer = () => {
     const [EmailSub, SetEmailSub] = useState({
         email: ''
     })
-    
+
+
     const headleSubmit = (e) => {
         axios.post('http://localhost:8081/EmailSubscribe', EmailSub)
         alert(EmailSub.email)
+        return (
+            toast.dark('🦄 Wow so easy!', {
+                position: "bottom-left",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            })
+        )
+
     }
 
   return (
