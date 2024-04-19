@@ -2,6 +2,7 @@ import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import  secureLocalStorage  from  "react-secure-storage"
 
 // https://wallpapercave.com/wp/wp5682561.jpg
 
@@ -12,9 +13,14 @@ const SignUp = () => {
         email: '',
         password: ''
     })
+
     const headleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8081/SignIn', LoginData)
+
+        const LoginToken = res.data.token
+        localStorage.setItem('Logintoken', LoginToken);
+        console.log('Login Successful');
 
     }
 
