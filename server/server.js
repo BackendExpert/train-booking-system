@@ -85,5 +85,11 @@ app.post('/EmailSubscribe', (req, res) => {
 })
 
 
+// SignUp Endpoint
+
+app.post('/SignUp', (req, res) => {
+    console.log(req.body)
+})
+
 //check the server is working
 app.listen(PORT, () => console.log(`Server is Running on PORT ${PORT}`));
