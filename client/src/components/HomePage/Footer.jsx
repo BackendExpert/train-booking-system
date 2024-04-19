@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import axios from 'axios'
-import { ToastContainer, toast } from 'material-react-toastify';
+
 
 const Footer = () => {
     const footerData = [
