@@ -1,6 +1,7 @@
 import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 
 const HomePage = () => {
@@ -153,6 +154,7 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }
