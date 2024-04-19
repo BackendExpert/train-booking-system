@@ -12,7 +12,9 @@ const NavBar = () => {
                     <h1 className="my-1">Train Booking</h1>
                 </div>
                 <div className="my-1">
-                    <p className="font-semibold">Sign In</p>
+                    <Link to={'/SignIn'}>
+                        <p className="font-semibold">Sign In</p>
+                    </Link>
                 </div>
                 
             </div>
