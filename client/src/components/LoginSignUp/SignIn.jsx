@@ -9,7 +9,7 @@ const SignUp = () => {
     <div className='bg-gray-200 py-24'>
         <div className='lg:mx-20 mx-8'>
             <Link to={'/'}>
-                <div className='mb-1 mx-4 flex'>
+                <div className='mb-1 mx-4 flex duration-500 hover:mx-2'>
                     <span className='mt-[1px] mx-2'><MyIcons name='arrow-back'></MyIcons></span>
                     <p className="">Back to Home</p>
                 </div>
