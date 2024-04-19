@@ -15,9 +15,7 @@ const SignUp = () => {
     const headleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8081/SignIn', LoginData)
-        .then(reas.data.Status === "Success"){
-            navigate('/Dashboard')
-        }
+
     }
 
   return (
