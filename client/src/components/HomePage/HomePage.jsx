@@ -32,7 +32,7 @@ const HomePage = () => {
                             <option value="DE">Germany</option>
                         </select>
                     </div>
-                    <div className="mx-12 my-4">
+                    <div className="mx-2 my-4">
                         <span className='lg:visible invisible'><MyIcons name='arrow-forward' size='large'></MyIcons></span>
                         <span className='lg:invisible visible'><MyIcons name='arrow-down' size='large'></MyIcons></span>
                     </div>
