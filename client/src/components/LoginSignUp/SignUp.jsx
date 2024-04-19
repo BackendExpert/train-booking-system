@@ -47,17 +47,17 @@ const SignUp = () => {
                     <form onSubmit={headleSubmit}>
                         <div className="my-5">
                             <label htmlFor="">Username : </label>
-                            <input type="text" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Username'
+                            <input type="text" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4 shadow-md' required placeholder='Enter Username'
                             onChange={e => SetUserData({...UserData, username:e.target.value})}/>
                         </div>
                         <div className="my-5">
                             <label htmlFor="">Email : </label>
-                            <input type="email" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Email'
+                            <input type="email" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4 shadow-md' required placeholder='Enter Email'
                             onChange={e => SetUserData({...UserData, email:e.target.value})}/>
                         </div>
                         <div className="my-5">
                             <label htmlFor="">Password : </label>
-                            <input type="password" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4' required placeholder='Enter Password'
+                            <input type="password" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4 shadow-md' required placeholder='Enter Password'
                             onChange={e => SetUserData({...UserData, password:e.target.value})}/>
                         </div>
                         <div className="">
