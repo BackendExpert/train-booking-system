@@ -21,19 +21,14 @@ const Footer = () => {
 
     const headleSubmit = (e) => {
         axios.post('http://localhost:8081/EmailSubscribe', EmailSub)
-        alert(EmailSub.email)
-        return (
-            toast.dark('🦄 Wow so easy!', {
-                position: "bottom-left",
-                autoClose: 3000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            })
-        )
-
+        .then(res => {
+            if(res.data.Status === "Success"){
+                alert("Your are Successfully Subscribe to News")
+            }
+            else{
+                alert(res.data.Error)
+            }
+        })
     }
 
   return (
