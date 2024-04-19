@@ -7,7 +7,7 @@ import axios from 'axios';
 // https://wallpapercave.com/wp/wp5682561.jpg
 
 const SignUp = () => {
-    navigate = useNavigate()
+    const navigate = useNavigate()
 
     const [UserData, SetUserData] = useState({
         username: '',
