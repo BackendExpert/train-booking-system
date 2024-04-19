@@ -156,6 +156,9 @@ app.post('/SignIn', (req, res) => {
                 'your-secret-key',
                 {expiresIn: '1h' }
             );
+
+            res.json({ token:token, Msg:"success", CheckRole:result });
+            console.log(result)
           }
           else{
             return res.json({Error: "Password not Match"})
