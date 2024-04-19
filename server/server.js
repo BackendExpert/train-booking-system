@@ -97,8 +97,11 @@ app.post('/SignUp', (req, res) => {
       if(result.length === 0){
         bcrypt.hash(req.body.password, 10, (err, hashPass) => {
           if(err) throw err
-
-          
+          const create_at = new Date()
+          const update_at = new Date()
+          const roleUser = "member"
+          const is_active = 1
+          const is_lock = 0
         })
       }
       else{
