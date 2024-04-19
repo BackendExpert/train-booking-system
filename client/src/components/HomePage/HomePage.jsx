@@ -2,15 +2,6 @@ import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
 import { Link } from "react-router-dom";
 
-const footerData = [
-    // for our services
-    {name: "History", link: "/History"},
-    {name: "Gallery", link: "#"},
-    {name: "Events", link: "#"},
-    {name: "Friends", link: "#"},
-    {name: "Link", link: "#"},
-
-]
 
 const HomePage = () => {
   return (
