@@ -14,6 +14,13 @@ export default function App() {
         {/* Login and SignUp */}
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/SignIn" element={<SignIn />} />
+        {/* 
+            after login redreact to homepage with login token
+          {
+          (() => {
+            if()
+          })()
+        } */}
         <Route path="/History" element={<History />} />
       </Routes>
     </BrowserRouter>
