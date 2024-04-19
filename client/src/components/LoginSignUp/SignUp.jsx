@@ -23,6 +23,9 @@ const SignUp = () => {
                 alert("The Registation is Successfully")
                 navigate('/SignIn')
             }
+            else{
+                alert(res.data.Error)
+            }
         })
     }
 
