@@ -112,8 +112,19 @@ app.post('/SignUp', (req, res) => {
             create_at,
             update_at,
             is_active,
-            is_lock
+            is_lock,
+            hashPass
           ]
+
+          connection.query(sql, [values], (err, result) => {
+            if(err){
+              return res.json({Error: "Error on Server"})
+            }
+            else{
+              return res.json({Status: "Success"})
+            }
+          })
+
         })
 
 
