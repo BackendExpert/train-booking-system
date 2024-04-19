@@ -146,7 +146,16 @@ app.post('/SignIn', (req, res) => {
         return res.json({Error: "User Not Found...."})
       }
       else{
-        bcrypt.compare(req.body.password, )
+        bcrypt.compare(req.body.password, result[0].password, (err, PasswordMatch) => {
+          if(err) throw err
+
+          if(PasswordMatch){
+
+          }
+          else{
+            return res.json({Error: "Password not Match"})
+          }
+        })
       }
     })
 })
