@@ -1,6 +1,16 @@
 import React from 'react'
 
 const Footer = () => {
+    const footerData = [
+        // for our services
+        {name: "History", link: "/History"},
+        {name: "Gallery", link: "#"},
+        {name: "Events", link: "#"},
+        {name: "Friends", link: "#"},
+        {name: "Link", link: "#"},
+    
+    ]
+    
   return (
     <footer className='bg-white px-16 py-12'>
         <div className="lg:flex">
