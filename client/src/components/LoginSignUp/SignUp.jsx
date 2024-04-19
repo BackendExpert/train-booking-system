@@ -13,6 +13,7 @@ const SignUp = () => {
     })
     
     const headleSubmit = (e) =>{
+        e.preventDefault()
 
     }
 
