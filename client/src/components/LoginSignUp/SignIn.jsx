@@ -6,6 +6,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const navigate = useNavigate()
+
+    const [LoginData, SetLoginData] = useState({
+        email: '',
+        password: ''
+    })
+
     
   return (
     <div className='bg-gray-200 py-24'>
