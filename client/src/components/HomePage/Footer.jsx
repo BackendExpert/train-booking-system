@@ -19,11 +19,7 @@ const Footer = () => {
     
     const headleSubmit = (e) => {
         axios.post('http://localhost:8081/EmailSubscribe', EmailSub)
-        .then(res => {
-            if(res.data.Status === "Success"){
-                console.log("Ok")
-            }
-        })
+        alert(EmailSub.email)
     }
 
   return (
