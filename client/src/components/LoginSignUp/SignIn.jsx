@@ -1,6 +1,7 @@
 import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
 import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 // https://wallpapercave.com/wp/wp5682561.jpg
 
@@ -11,8 +12,14 @@ const SignUp = () => {
         email: '',
         password: ''
     })
+    const headleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8081/SignIn', LoginData)
+        .then(reas.data.Status === "Success"){
+            navigate('/Dashboard')
+        }
+    }
 
-    
   return (
     <div className='bg-gray-200 py-24'>
         <div className='lg:mx-20 mx-8'>
@@ -24,7 +31,7 @@ const SignUp = () => {
             </Link>
             <div className="lg:flex bg-white shadow-md rounded w-full h-auto">
             <div className="lg:mx-5 mx-0 py-12 px-10 w-full">
-                    <form className=''>
+                    <form onSubmit={headleSubmit}>
                         <div className="my-5">
                             <label htmlFor="">Email : </label>
                             <input type="email" name="" id="" className='w-full border border-gray-300 my-2 h-12 rounded pl-4 shadow-md' required placeholder='Enter Email'/>
