@@ -2,12 +2,14 @@ import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
 import { Link } from "react-router-dom";
 import Footer from './Footer';
+import NavBar from './NavBar';
 
 
 const HomePage = () => {
   return (
     <div className="">
         <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover lg:h-[80vh] h-screen w-full'>
+            <NavBar />
             <div className="text-white text-center my-12">
                 <h1 className="text-3xl font-semibold">Sri Lankan Railways</h1>
                 <div className="my-16 text-center">
