@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import axios from 'axios'
 
+import { ToastContainer, toast } from 'material-react-toastify';
+import 'material-react-toastify/dist/ReactToastify.css';
+
 const Footer = () => {
     const footerData = [
         // for our services
