@@ -97,12 +97,26 @@ app.post('/SignUp', (req, res) => {
       if(result.length === 0){
         bcrypt.hash(req.body.password, 10, (err, hashPass) => {
           if(err) throw err
+
           const create_at = new Date()
           const update_at = new Date()
           const roleUser = "member"
           const is_active = 1
           const is_lock = 0
+
+          const sql = "INSERT INTO users(username, email, role, create_at, update_at, is_active, is_lock, password) VALUES (?)"
+          const values = [
+            req.body.username,
+            req.body.email,
+            roleUser,
+            create_at,
+            update_at,
+            is_active,
+            is_lock
+          ]
         })
+
+
       }
       else{
         return res.json({Error: "Your are Already Registered"})
