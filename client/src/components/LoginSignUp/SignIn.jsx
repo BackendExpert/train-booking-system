@@ -33,9 +33,15 @@ const SignUp = () => {
                 alert('Your Account has been Locked. unauthorized activity has been detected.')
                 localStorage.clear();
                 console.log('Unauthorized Access. Logedout...');
-                navigate('/');
+                navigate('/SignIn');
             }
-            else if(res.data.CheckRole[0].role === 'Director'){
+            else if(res.data.CheckRole[0].is_active === 0){
+                alert('Your Account is Deactivated')
+                localStorage.clear();
+                console.log('Logedout...');
+                navigate('/SignIn');
+            }
+            else if(res.data.CheckRole[0].role === 'Member'){
                 navigate('/DirectorDash');
             }
             else if(res.data.CheckRole[0].role === 'Secretary'){
