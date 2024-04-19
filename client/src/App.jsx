@@ -3,6 +3,8 @@ import HomePage from "./components/HomePage/HomePage";
 import SignUp from "./components/LoginSignUp/SignUp";
 import SignIn from "./components/LoginSignUp/SignIn";
 import History from "./components/History/History";
+import PrivateRoute from "./components/Security/PrivateRoute";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 
 export default function App() {
@@ -22,6 +24,10 @@ export default function App() {
           })()
         } */}
         <Route path="/History" element={<History />} />
+
+        {/* These Routes are Protected using PrivateRoute */}
+
+        <Route path="/Dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
       </Routes>
     </BrowserRouter>
   )
