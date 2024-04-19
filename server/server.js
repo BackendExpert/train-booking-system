@@ -57,5 +57,12 @@ app.use(cors())
 app.use(express.static('public')); 
 
 
+// Endpoint for EmailSubscribe
+
+app.post('/EmailSubscribe', (req, res) => {
+  
+})
+
+
 //check the server is working
 app.listen(PORT, () => console.log(`Server is Running on PORT ${PORT}`));
