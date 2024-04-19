@@ -135,5 +135,21 @@ app.post('/SignUp', (req, res) => {
     })
 })
 
+// SignIn EndPoint
+
+app.post('/SignIn', (req, res) => {
+    const sql = "SELECT * FROM users WHERE email = ?"
+    connection.query(sql, [req.body.email], (err, result) => {
+      if(err) throw err
+
+      if(result.length === 0){
+        return res.json({Error: "User Not Found...."})
+      }
+      else{
+        
+      }
+    })
+})
+
 //check the server is working
 app.listen(PORT, () => console.log(`Server is Running on PORT ${PORT}`));
