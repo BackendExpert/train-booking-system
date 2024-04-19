@@ -22,6 +22,12 @@ const SignUp = () => {
         localStorage.setItem('Logintoken', LoginToken);
         console.log('Login Successful');
 
+        const userRole = res.data.CheckRole[0].role;
+        const userEmail = res.data.CheckRole[0].email;
+
+        secureLocalStorage.setItem("loginNew", userRole);
+        secureLocalStorage.setItem("logiafter", userEmail);
+
     }
 
   return (
