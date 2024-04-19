@@ -55,3 +55,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.json())
 app.use(cors())
 app.use(express.static('public')); 
+
+
+//check the server is working
+app.listen(PORT, () => console.log(`Server is Running on PORT ${PORT}`));
