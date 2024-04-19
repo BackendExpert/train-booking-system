@@ -13,7 +13,7 @@ const NavBar = () => {
                 </div>
                 <div className="my-1">
                     <Link to={'/SignIn'}>
-                        <p className="font-semibold">Sign In</p>
+                        <p className="font-semibold duration-500 hover:mr-2">Sign In</p>
                     </Link>
                 </div>
                 
