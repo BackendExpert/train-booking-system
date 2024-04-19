@@ -1,11 +1,14 @@
 import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import secureLocalStorage from "react-secure-storage"
+import axios from 'axios';
 
 // https://wallpapercave.com/wp/wp5682561.jpg
 
 const SignUp = () => {
+    navigate = useNavigate()
+
     const [UserData, SetUserData] = useState({
         username: '',
         email:'',
@@ -14,7 +17,13 @@ const SignUp = () => {
     
     const headleSubmit = (e) =>{
         e.preventDefault()
-
+        axios.post('http://localhost:8081/SignUp', UserData)
+        .then(res => {
+            if(res.data.Status === "Success"){
+                alert("The Registation is Successfully")
+                navigate('/SignIn')
+            }
+        })
     }
 
 
