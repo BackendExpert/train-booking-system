@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const footerData = [
     // for our services
-    {name: "History", link: "#"},
+    {name: "History", link: "/History"},
     {name: "Gallery", link: "#"},
     {name: "Events", link: "#"},
     {name: "Friends", link: "#"},
