@@ -95,7 +95,7 @@ app.post('/SignUp', (req, res) => {
       if(err) throw err
 
       if(result.length === 0){
-
+        
       }
       else{
         return res.json({Error: "Your are Already Registered"})
