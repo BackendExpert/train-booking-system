@@ -60,7 +60,7 @@ app.use(express.static('public'));
 // Endpoint for EmailSubscribe
 
 app.post('/EmailSubscribe', (req, res) => {
-  
+  console.log(req.body)
 })
 
 
