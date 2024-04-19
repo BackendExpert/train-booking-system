@@ -95,7 +95,11 @@ app.post('/SignUp', (req, res) => {
       if(err) throw err
 
       if(result.length === 0){
-        
+        bcrypt.hash(req.body.password, 10, (err, hashPass) => {
+          if(err) throw err
+
+          
+        })
       }
       else{
         return res.json({Error: "Your are Already Registered"})
