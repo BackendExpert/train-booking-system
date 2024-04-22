@@ -23,9 +23,10 @@ const NavBar = () => {
                     <MyIcons name='train' size='large' ></MyIcons>
                     <h1 className="my-1">Train Booking</h1>
                 </div>
-                <div className="my-1">
-                    jehan
-                    {
+                <div className="my-1">                   
+                    <div className="flex">
+                        <p className="mx-2">jehan</p>
+                        {
                         (() => {
                             if(RoleUser !== null && EmailUser !== null){
                                 return (
@@ -41,6 +42,7 @@ const NavBar = () => {
                             }
                         })()
                     }
+                    </div>
                 </div>
                 
             </div>
