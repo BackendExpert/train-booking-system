@@ -21,15 +21,13 @@ const NavBar = () => {
                         (() => {
                             if(RoleUser !== null && EmailUser !== null){
                                 return (
-                                    <Link to={'/SignIn'}>
-                                        <p className="font-semibold duration-500 hover:mr-2">Logout</p>
-                                    </Link>
+                                    <p className="font-semibold duration-500 hover:mr-2" onClick={logout}>Logout</p>
                                 )
                             }
                             else{
                                 return (
                                     <Link to={'/SignIn'}>
-                                        <p className="font-semibold duration-500 hover:mr-2">Sign IN</p>
+                                        <p className="font-semibold duration-500 hover:mr-2" >Sign IN</p>
                                     </Link>
                                 )
                             }
