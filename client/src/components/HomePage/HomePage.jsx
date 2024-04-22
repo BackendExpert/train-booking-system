@@ -1,17 +1,16 @@
 import React, {useState } from 'react'
 import MyIcons from '@reacticons/ionicons'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from './Footer';
 import NavBar from './NavBar';
 import  secureLocalStorage  from  "react-secure-storage";
-
 
 const HomePage = () => {
     const RoleUser = secureLocalStorage.getItem("loginNew");
     const EmailUser = secureLocalStorage.getItem("logiafter");
     const navigate = useNavigate()
 
-    
+
   return (
     <div className="">
         <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp12713228.jpg)] bg-center bg-cover lg:h-[80vh] h-screen w-full'>
