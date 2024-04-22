@@ -24,10 +24,14 @@ export default function App() {
           {
           (() => {
             if(RoleUser !== null && EmailUser !== null){
-              <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>}/>
+              return (
+                <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>}/>
+              )
             } 
             else{
-              <Route path="/" element={<HomePage />}/>
+              return (
+                <Route path="/" element={<HomePage />}/>
+              )
             }
           })()
         }
