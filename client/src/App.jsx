@@ -5,9 +5,12 @@ import SignIn from "./components/LoginSignUp/SignIn";
 import History from "./components/History/History";
 import PrivateRoute from "./components/Security/PrivateRoute";
 import Dashboard from "./components/Dashboard/Dashboard";
-
+import  secureLocalStorage  from  "react-secure-storage";
 
 export default function App() {
+  const RoleUser = secureLocalStorage.getItem("loginNew");
+  const EmailUser = secureLocalStorage.getItem("logiafter");
+
   return (
     <BrowserRouter>
       <Routes>
@@ -16,11 +19,16 @@ export default function App() {
         {/* Login and SignUp */}
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/SignIn" element={<SignIn />} />
-        {/* 
-            after login redreact to homepage with login token
-          {
+        
+            {/* after login redreact to homepage with login token */}
+          {/* {
           (() => {
-            if()
+            if(RoleUser !== null && EmailUser !== null){
+
+            }
+            else{
+
+            }
           })()
         } */}
         <Route path="/History" element={<History />} />
