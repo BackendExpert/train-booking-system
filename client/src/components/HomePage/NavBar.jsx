@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import MyIcons from '@reacticons/ionicons'
 import axios from 'axios'
 import  secureLocalStorage  from  "react-secure-storage";
@@ -8,6 +8,12 @@ import  secureLocalStorage  from  "react-secure-storage";
 const NavBar = () => {
     const RoleUser = secureLocalStorage.getItem("loginNew");
     const EmailUser = secureLocalStorage.getItem("logiafter");
+    const navigate = useNavigate()
+
+    const logout = () => {
+        localStorage.clear()
+        navigate('/')
+    } 
   return (
     <div className='mb-20'>
         <div className="bg-none text-white mt-[-20px]">
