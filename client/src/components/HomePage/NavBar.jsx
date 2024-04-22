@@ -7,7 +7,7 @@ import  secureLocalStorage  from  "react-secure-storage";
 
 const NavBar = () => {
     const RoleUser = secureLocalStorage.getItem("loginNew");
-    const EmailUser = secureLocalStorage.getItem("")
+    const EmailUser = secureLocalStorage.getItem("logiafter");
   return (
     <div className='mb-20'>
         <div className="bg-none text-white mt-[-20px]">
@@ -19,7 +19,16 @@ const NavBar = () => {
                 <div className="my-1">
                     {
                         (() => {
-                            if()
+                            if(RoleUser !== null && EmailUser !== null){
+                                <Link to={'/SignIn'}>
+                                    <p className="font-semibold duration-500 hover:mr-2">Sign In</p>
+                                </Link>
+                            }
+                            else{
+                                <Link to={'/SignIn'}>
+                                    <p className="font-semibold duration-500 hover:mr-2">Sign In</p>
+                                </Link>
+                            }
                         })()
                     }
                     <Link to={'/SignIn'}>
