@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MyIcons from '@reacticons/ionicons'
+import axios from 'axios'
+import  secureLocalStorage  from  "react-secure-storage";
+
 
 const NavBar = () => {
   return (
