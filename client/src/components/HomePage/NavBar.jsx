@@ -6,6 +6,8 @@ import  secureLocalStorage  from  "react-secure-storage";
 
 
 const NavBar = () => {
+    const RoleUser = secureLocalStorage.getItem("loginNew");
+    const EmailUser = secureLocalStorage.getItem("")
   return (
     <div className='mb-20'>
         <div className="bg-none text-white mt-[-20px]">
@@ -15,6 +17,11 @@ const NavBar = () => {
                     <h1 className="my-1">Train Booking</h1>
                 </div>
                 <div className="my-1">
+                    {
+                        (() => {
+                            if()
+                        })()
+                    }
                     <Link to={'/SignIn'}>
                         <p className="font-semibold duration-500 hover:mr-2">Sign In</p>
                     </Link>
