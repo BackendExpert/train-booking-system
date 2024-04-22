@@ -14,23 +14,23 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}/>
+
 
         {/* Login and SignUp */}
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/SignIn" element={<SignIn />} />
         
             {/* after login redreact to homepage with login token */}
-          {/* {
+          {
           (() => {
             if(RoleUser !== null && EmailUser !== null){
-
-            }
+              <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>}/>
+            } 
             else{
-
+              <Route path="/" element={<HomePage />}/>
             }
           })()
-        } */}
+        }
         <Route path="/History" element={<History />} />
 
         {/* These Routes are Protected using PrivateRoute */}
