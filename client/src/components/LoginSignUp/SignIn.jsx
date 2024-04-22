@@ -41,8 +41,8 @@ const SignUp = () => {
                     console.log('Logedout...');
                     navigate('/SignIn');
                 }
-                else if(res.data.CheckRole[0].role === 'Member'){
-                    navigate('/DirectorDash');
+                else if(res.data.CheckRole[0].role === 'member'){
+                    navigate('/Dashboard');
                 }
                 else if(res.data.CheckRole[0].role === 'Secretary'){
                     navigate('/Secretary');
@@ -87,9 +87,12 @@ const SignUp = () => {
                     navigate('/DriverDash');
                 }
                 else{
-                    alert("ERROR");
+                    alert(res.data.Error);
                 }
            }
+           else{
+                alert(res.data.Error);
+            }
         })
 
 
