@@ -17,79 +17,82 @@ const SignUp = () => {
     const headleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8081/SignIn', LoginData)
+        .then(res => {
+            const LoginToken = res.data.token
+            localStorage.setItem('Logintoken', LoginToken);
+            console.log('Login Successful');
+    
+            const userRole = res.data.CheckRole[0].role;
+            const userEmail = res.data.CheckRole[0].email;
+    
+            secureLocalStorage.setItem("loginNew", userRole);
+            secureLocalStorage.setItem("logiafter", userEmail);
+    
+            if(res.data.Msg === "success"){
+                if(res.data.CheckRole[0].is_active === 0 && res.data.CheckRole[0].is_lock === 1){
+                    alert('Your Account has been Locked. unauthorized activity has been detected.')
+                    localStorage.clear();
+                    console.log('Unauthorized Access. Logedout...');
+                    navigate('/SignIn');
+                }
+                else if(res.data.CheckRole[0].is_active === 0){
+                    alert('Your Account is Deactivated')
+                    localStorage.clear();
+                    console.log('Logedout...');
+                    navigate('/SignIn');
+                }
+                else if(res.data.CheckRole[0].role === 'Member'){
+                    navigate('/DirectorDash');
+                }
+                else if(res.data.CheckRole[0].role === 'Secretary'){
+                    navigate('/Secretary');
+                }
+                else if(res.data.CheckRole[0].role === 'SuperAdmin'){
+                    navigate('/superAdmin');
+                }
+                else if(res.data.CheckRole[0].role === "Admin"){
+                    navigate('/admin');
+                }
+                else if(res.data.CheckRole[0].role === "HOD"){
+                    navigate('/hod');
+                }
+                else if(res.data.CheckRole[0].role === "TO"){
+                    navigate('/to');
+                }
+                else if(res.data.CheckRole[0].role === "Librarian"){
+                    navigate('/librarian');
+                }
+                else if(res.data.CheckRole[0].role === "Labmanager"){
+                    navigate('/labManager');
+                }
+                else if(res.data.CheckRole[0].role === "Accountant"){
+                    navigate('/accountant');
+                }
+                else if(res.data.CheckRole[0].role === "User"){
+                    navigate('/user');                    
+                }
+                else if(res.data.CheckRole[0].role === "Scientist"){
+                    navigate('/ScientistsDash');
+                }
+                else if(res.data.CheckRole[0].role === "RA"){
+                    navigate('/RADash');
+                }
+                else if(res.data.CheckRole[0].role === "NonAcademic"){
+                    navigate('/NonAcademic');
+                }
+                else if(res.data.CheckRole[0].role === "PDFellow"){
+                    navigate('/PDFellow');
+                }
+                else if(res.data.CheckRole[0].role === "Driver"){
+                    navigate('/DriverDash');
+                }
+                else{
+                    alert("ERROR");
+                }
+           }
+        })
 
-        const LoginToken = res.data.token
-        localStorage.setItem('Logintoken', LoginToken);
-        console.log('Login Successful');
 
-        const userRole = res.data.CheckRole[0].role;
-        const userEmail = res.data.CheckRole[0].email;
-
-        secureLocalStorage.setItem("loginNew", userRole);
-        secureLocalStorage.setItem("logiafter", userEmail);
-
-        if(res.data.Msg === "success"){
-            if(res.data.CheckRole[0].is_active === 0 && res.data.CheckRole[0].is_lock === 1){
-                alert('Your Account has been Locked. unauthorized activity has been detected.')
-                localStorage.clear();
-                console.log('Unauthorized Access. Logedout...');
-                navigate('/SignIn');
-            }
-            else if(res.data.CheckRole[0].is_active === 0){
-                alert('Your Account is Deactivated')
-                localStorage.clear();
-                console.log('Logedout...');
-                navigate('/SignIn');
-            }
-            else if(res.data.CheckRole[0].role === 'Member'){
-                navigate('/DirectorDash');
-            }
-            else if(res.data.CheckRole[0].role === 'Secretary'){
-                navigate('/Secretary');
-            }
-            else if(res.data.CheckRole[0].role === 'SuperAdmin'){
-                navigate('/superAdmin');
-            }
-            else if(res.data.CheckRole[0].role === "Admin"){
-                navigate('/admin');
-            }
-            else if(res.data.CheckRole[0].role === "HOD"){
-                navigate('/hod');
-            }
-            else if(res.data.CheckRole[0].role === "TO"){
-                navigate('/to');
-            }
-            else if(res.data.CheckRole[0].role === "Librarian"){
-                navigate('/librarian');
-            }
-            else if(res.data.CheckRole[0].role === "Labmanager"){
-                navigate('/labManager');
-            }
-            else if(res.data.CheckRole[0].role === "Accountant"){
-                navigate('/accountant');
-            }
-            else if(res.data.CheckRole[0].role === "User"){
-                navigate('/user');                    
-            }
-            else if(res.data.CheckRole[0].role === "Scientist"){
-                navigate('/ScientistsDash');
-            }
-            else if(res.data.CheckRole[0].role === "RA"){
-                navigate('/RADash');
-            }
-            else if(res.data.CheckRole[0].role === "NonAcademic"){
-                navigate('/NonAcademic');
-            }
-            else if(res.data.CheckRole[0].role === "PDFellow"){
-                navigate('/PDFellow');
-            }
-            else if(res.data.CheckRole[0].role === "Driver"){
-                navigate('/DriverDash');
-            }
-            else{
-                alert("ERROR");
-            }
-       }
 
 
 
