@@ -13,6 +13,7 @@ const NavBar = () => {
     const logout = () => {
         localStorage.clear()
         navigate('/')
+        window.location.reload()
     } 
   return (
     <div className='mb-20'>
@@ -27,7 +28,7 @@ const NavBar = () => {
                         (() => {
                             if(RoleUser !== null && EmailUser !== null){
                                 return (
-                                    <p className="font-semibold duration-500 hover:mr-2" onClick={logout}>Logout</p>
+                                    <p className="font-semibold duration-500 hover:mr-2 cursor-pointer" onClick={logout}>Logout</p>
                                 )
                             }
                             else{
