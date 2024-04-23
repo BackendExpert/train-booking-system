@@ -26,7 +26,7 @@ const Dashboard = () => {
   return (
     <div className="bg-gray-200 py-4 px-3 h-auto w-full">
       <div className="flex">
-        <div className={`duration-500 relative border-r-4 border-blue-300 shadow-xl my-1 mx-2 rounded bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
+        <div className={`duration-500 relative border-r-4 border-blue-300 shadow-xl my-1 mx-2 rounded-xl bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
           <div className="flex">
               <div className="text-[#3B71CA] pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <MyIcons size="large" name="close"></MyIcons> : <MyIcons size="large" name="menu"></MyIcons>}</div>
               {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
@@ -58,7 +58,7 @@ const Dashboard = () => {
               <div className="">
                   {
                       allUserSide.map((sidem) => {
-                          if(RoleUser === "SuperAdmin" || RoleUser === "SuperAdmin"){
+                          if(RoleUser === "SuperAdmin" || RoleUser === "SuperAdmin" || RoleUser === "member"){
                               return (
                                   <Link to={sidem.link}>
                                       <div className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA]">                        
@@ -67,30 +67,6 @@ const Dashboard = () => {
                                       </div>
                                   </Link>
                               )
-                          }
-                          if(RoleUser === "renter"){
-                              if(sidem.id === 1 || sidem.id === 2 || sidem.id === 3 || sidem.id === 4){
-                                  return (
-                                      <Link to={sidem.link}>
-                                          <div className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA]">                        
-                                              <p>{sidem.icon}</p>
-                                              <p className={`pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
-                                          </div>
-                                      </Link>
-                                  )
-                              }
-                          }
-                          if(RoleUser === "buyer"){
-                              if(sidem.id === 1 || sidem.id === 2 || sidem.id === 4){
-                                  return (
-                                      <Link to={sidem.link}>
-                                          <div className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA]">                        
-                                              <p>{sidem.icon}</p>
-                                              <p className={`pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
-                                          </div>
-                                      </Link>
-                                  )
-                              }
                           }
                       })
                   }
