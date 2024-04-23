@@ -24,13 +24,16 @@ const NavBar = () => {
                     <h1 className="my-1">Train Booking</h1>
                 </div>
                 <div className="my-1">                   
-                    <div className="flex">
-                        <p className="mx-2">jehan</p>
+                    <div className="">                        
                         {
                         (() => {
                             if(RoleUser !== null && EmailUser !== null){
                                 return (
-                                    <p className="font-semibold duration-500 hover:mr-2 cursor-pointer" onClick={logout}>Logout</p>
+                                    <div className="flex">
+                                        <p className="mx-2">{EmailUser}</p>
+                                        <p className="font-semibold duration-500 hover:mr-2 cursor-pointer" onClick={logout}>Logout</p>
+                                    </div>
+                                    
                                 )
                             }
                             else{
