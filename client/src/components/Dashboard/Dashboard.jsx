@@ -7,8 +7,15 @@ const Dashboard = () => {
   const RoleUser = secureLocalStorage.getItem("loginNew");
   const EmailUser = secureLocalStorage.getItem("logiafter");
   const navigate = useNavigate()
+
+  const [sideOpen, SetsideOpen] = useState();
+
   return (
-    <div>Dashboard</div>
+    <div className="bg-gray-200 py-4 px-3">
+      <div className="bg-white py-4 px-2">
+        Dashbord
+      </div>
+    </div>
   )
 }
 
