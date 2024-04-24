@@ -11,6 +11,12 @@ const Dashboard = () => {
 
   const [sideOpen, SetsideOpen] = useState();
 
+  const logout = () => {
+    localStorage.clear()
+    navigate('/')
+    window.location.reload()
+} 
+
   const allUserSide = [
     {id: 1, name: "Vehicles", link: "/Vehicles", icon: <MyIcons name="car" size="large"></MyIcons>},
     {id: 2, name: "Rented Vehicle", link: "#", icon: <MyIcons name="car-sport" size="large"></MyIcons>},
@@ -72,6 +78,22 @@ const Dashboard = () => {
                   }
               </div>
           </div>
+            <div className="w-full">
+              <div className='bg-white py-4 px-8 my-1 rounded-xl '>
+                  <div className="flex justify-between">
+                    <h1 className="text-2xl">TBS</h1>
+                    <div className="my-1 flex text-red-500 cursor-pointer" onClick={logout}>
+                      <MyIcons name='power' size='large'></MyIcons>
+                      <p className="pt-1 px-2"> Logout</p>
+                    </div>
+                  </div>
+              </div>
+              <div className="">
+                <div className="w-full bg-white my-5 px-6 py-8 rounded-xl">
+                  Dashbord
+                </div>
+              </div>
+            </div>
         </div>
       </div>
   )
